@@ -4,10 +4,10 @@ services:
         volumes:
             - "/var/run/docker.sock:/var/run/docker.sock"
         ports:
-            - 8080:8080
+            - 8081:8081
         image: functions/gateway:0.6.6-beta
         networks:
-            - functions-hello
+            - functions
         environment:
             dnsrr: "true"  # Temporarily use dnsrr in place of VIP while issue persists on PWD
         deploy:
@@ -16,7 +16,7 @@ services:
                     - 'node.role == manager'
                     - 'node.platform.os == linux'
 networks:
-    functions-hello:
+    functions:
         driver: overlay
         # Docker does not support this option yet - maybe create outside of the stack and reference as "external"?
         #attachable: true
