@@ -17,6 +17,7 @@ before_install:
   # installing the faas-cli
   - curl -sSL https://cli.openfaas.com | sudo sh
   - docker swarm init
+  - chmod +x ./ci-setup.sh
   - ./ci-setup.sh
 
 script:
