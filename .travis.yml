@@ -18,7 +18,7 @@ before_install:
   - curl -sSL https://cli.openfaas.com | sudo sh
   - docker swarm init
   - chmod +x ./ci-setup.sh
-  - chmod +x ./deploy-stack.sh
+  - chmod +x ./deploy_stack.sh
   - ./ci-setup.sh
 
 script:
