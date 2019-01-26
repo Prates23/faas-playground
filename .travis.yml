@@ -14,7 +14,7 @@ before_install:
   - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
   # installing the faas-cli
   - curl -sSL https://cli.openfaas.com | sudo sh
-  - docker swarm init --advertise-addr
+  - docker swarm init --advertise-addr eth0
   - chmod +x ./ci-setup.sh
   - chmod +x ./deploy_stack.sh
   - ./ci-setup.sh
