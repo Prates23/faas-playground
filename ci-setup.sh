@@ -42,7 +42,7 @@ faas-cli build --parallel 4 -f hello-java.yml
 # we can't deploy unless the gateway is ready so wait
 wait_for_service_to_start func_gateway
 # and then deploy
-faas-cli deploy -f hello-java.yml
+faas-cli deploy -f hello-java.yml --gateway http://127.0.0.1:8080
 
 # wait for functions to become ready for testing
 wait_for_service_to_start hello-java
