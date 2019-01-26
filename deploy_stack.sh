@@ -6,4 +6,4 @@ if ! [ -x "$(command -v docker)" ]; then
 fi
 
 echo "Deploying stack"
-#docker stack deploy func --compose-file docker-compose.yml
+docker stack deploy func --compose-file docker-compose.yml
