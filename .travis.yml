@@ -18,7 +18,7 @@ before_install:
   #- chmod +x ./ci-setup.sh
   #- chmod +x ./deploy_stack.sh
   - git clone https://github.com/openfaas/faas && cd faas && ./deploy_stack.sh
-  - ./ci-setup.sh
+  - ./../ci-setup.sh
 
 # script:
 #   - yarn test
