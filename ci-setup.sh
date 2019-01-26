@@ -41,6 +41,10 @@ faas-cli build -f ./../hello-java.yml
 
 # we can't deploy unless the gateway is ready so wait
 wait_for_service_to_start func_gateway
+
+# login on gateway
+#echo -n <some_hash_secret> | faas-cli login --username=admin --password-stdin
+
 # and then deploy
 faas-cli deploy -f ./../hello-java.yml
 

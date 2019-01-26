@@ -17,7 +17,7 @@ before_install:
   - docker swarm init
   - chmod +x ./ci-setup.sh
   #- chmod +x ./deploy_stack.sh
-  - git clone https://github.com/openfaas/faas && cd faas && ./deploy_stack.sh
+  - git clone https://github.com/openfaas/faas && cd faas && ./deploy_stack.sh --no-auth 
   - ./../ci-setup.sh
 
 # script:
