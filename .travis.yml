@@ -8,8 +8,6 @@ language: java
 jdk:
   - oraclejdk8
   
-cache: yarn
-
 before_install:
   # installing newer docker
   - sudo apt-get update
@@ -21,8 +19,8 @@ before_install:
   - chmod +x ./deploy_stack.sh
   - ./ci-setup.sh
 
-script:
-  - yarn test
+# script:
+#   - yarn test
 
 after_script:
   - docker swarm leave -f
