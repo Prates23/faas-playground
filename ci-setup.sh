@@ -34,7 +34,7 @@ wait_for_service_to_start() {
 }
 
 # deploy the stack to swarm
-./deploy_stack.sh
+#./deploy_stack.sh
 
 # build the functions 
 faas-cli build -f hello-java.yml
