@@ -16,6 +16,8 @@ public class Handler implements com.openfaas.model.IHandler {
 	    
 	    
 	    FibonacciInput fibonacciInput = gson.fromJson(req.getBody(), FibonacciInput.class);
+
+	    int inputFibonacci = Strings
 	    
 	    String body = Integer.toString(fibonacci(fibonacciInput.getFibonacciInput()));
 	    
@@ -37,9 +39,9 @@ public class Handler implements com.openfaas.model.IHandler {
 }
 
 class FibonacciInput{
-		private int n=1;
+		private String input="1";
 		
 		public int getFibonacciInput(){
-			return this.n;
+			return this.input;
 		}
 }
