@@ -1,3 +1,6 @@
+fibonacci-java/build/
+fibonacci-java/template/
+
 # Compiled class file
 *.class
 

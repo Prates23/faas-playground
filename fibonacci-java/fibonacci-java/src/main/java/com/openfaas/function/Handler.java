@@ -5,7 +5,6 @@ import com.openfaas.model.IResponse;
 import com.openfaas.model.IRequest;
 import com.openfaas.model.Response;
 
-import com.google.gson.*;
 
 public class Handler implements com.openfaas.model.IHandler {
 
@@ -32,7 +31,7 @@ public class Handler implements com.openfaas.model.IHandler {
         }
     }
 
-    int randomWithRange(int min, int max){
+    public int randomWithRange(int min, int max){
         int range = (max - min) + 1;
         return (int)(Math.random() * range) + min;
     }
