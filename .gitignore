@@ -29,3 +29,6 @@ hs_err_pid*
 ../fibonacci-java/.gradle/
 */fibonacci-java/.idea/      
 */fibonacci-java/fibonacci-java.iml
+
+template
+build
