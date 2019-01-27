@@ -19,7 +19,7 @@ before_install:
   #- chmod +x ./deploy_stack.sh
   - git clone https://github.com/openfaas/faas && cd faas && ./deploy_stack.sh --no-auth 
   - ./../ci-setup.sh
-  - cd ./../hello-java
+  - cd ..
 
 # script:
 #   - yarn test
